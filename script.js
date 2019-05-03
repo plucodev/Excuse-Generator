@@ -5,17 +5,18 @@
     
     function excuseGenerator(){
         let excuseGeneratorArray = []
-        let randomItemWho = who[Math.floor(Math.random()*who.length-1)];
+        let randomItemWho = who[Math.floor(Math.random()*who.length)];
             excuseGeneratorArray.push(randomItemWho)
-        let randomItemVerb = verb[Math.floor(Math.random()*verb.length-1)];
+        let randomItemVerb = verb[Math.floor(Math.random()*verb.length)];
             excuseGeneratorArray.push(randomItemVerb)
-        let randomItemWhat = what[Math.floor(Math.random()*what.length-1)];
+        let randomItemWhat = what[Math.floor(Math.random()*what.length)];
             excuseGeneratorArray.push(randomItemWhat)
-        let randomItemWhen = when[Math.floor(Math.random()*when.length-1)];
+        let randomItemWhen = when[Math.floor(Math.random()*when.length)];
             excuseGeneratorArray.push(randomItemWhen)
         let excuseText = excuseGeneratorArray[0] + " " + excuseGeneratorArray[1] + " " + excuseGeneratorArray[2] + " " + excuseGeneratorArray[3]
         
         document.getElementById("excuse-text").innerHTML = excuseText;
+        
         return excuseText
 
     }
